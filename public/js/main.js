@@ -211,9 +211,6 @@ var testnet = !1,
     }, {
         title: "Status",
         link: "status"
-    }, {
-        title: "Rich List",
-        link: "richList"
     }], $scope.openScannerModal = function() {
         $modal.open({
             templateUrl: "scannerModal.html",
@@ -1215,9 +1212,6 @@ angular.module("insight").directive("scroll", function($window) {
     }).when("/status", {
         templateUrl: "views/status.html",
         title: "Status"
-    }).when("/richList", {
-        templateUrl: "views/rich_list.html",
-        title: "Rich List"
     }).when("/messages/verify", {
         templateUrl: "views/messages_verify.html",
         title: "Verify Message"
