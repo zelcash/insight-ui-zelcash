@@ -47,21 +47,21 @@ function($scope, $routeParams, StatisticsByDaysTransactions, StatisticsByDaysOut
 	self.networkhashps = 0;
     self.totalsupply = 0;
     
-    var statisticChart = new StatisticChart(self.chartDays);
-        self.chartOptions = statisticChart.chartOptions;
-        self.daysButtons = statisticChart.daysButtons;
+    //var statisticChart = new StatisticChart(self.chartDays);
+    //self.chartOptions = statisticChart.chartOptions;
+    //self.daysButtons = statisticChart.daysButtons;
         
-    $scope.$on('chart-create', function (evt, chart) {
-        if (chart.chart.canvas.id === 'line') {
-            statisticChart.changeChartColor(chart);
-			chart.update();
-        }
-    });
+   // $scope.$on('chart-create', function (evt, chart) {
+    //    if (chart.chart.canvas.id === 'line') {
+   //         statisticChart.changeChartColor(chart);
+	//		chart.update();
+    //    }
+   // });
     $scope.type = 'StackedBar';
     
-    self.getDifficulties = function(){
-        statisticChart.load(factories[ $routeParams.type ].factory, factories[ $routeParams.type ].field, $routeParams.type);
-	};
+   // self.getDifficulties = function(){
+   //     statisticChart.load(factories[ $routeParams.type ].factory, factories[ $routeParams.type ].field, $routeParams.type);
+	//};
 
 	self.get24HoursStats = function() {
         Statistics24Hours.get(function(response) {

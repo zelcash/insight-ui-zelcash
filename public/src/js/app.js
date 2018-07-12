@@ -26,6 +26,7 @@ angular.module('insight',[
   'insight.search',
   'insight.charts',
   'insight.statistics',
+  'insight.marktes',
   'insight.status',
   'insight.connection',
   'insight.currency',
