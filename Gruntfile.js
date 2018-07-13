@@ -51,8 +51,7 @@ module.exports = function(grunt) {
           'public/lib/chart.js/dist/Chart.min.js',
           'public/lib/zeroclipboard/ZeroClipboard.min.js',
           'public/lib/numeral/min/numeral.min.js',
-          'public/lib/c3/c3.min.js',
-          'public/lib/d3/d3.min.js'
+          'public/lib/bignumber.js/bignumber.min.js'
         ],
         dest: 'public/js/vendors.js'
       },
@@ -90,8 +89,6 @@ module.exports = function(grunt) {
       },
       css: {
         src: [
-          'public/lib/bootstrap/dist/css/bootstrap.min.css',
-          'public/lib/c3/c3.min.css',
           'public/src/css/**/*.css'
         ],
         dest: 'public/css/main.css'
@@ -152,7 +149,7 @@ module.exports = function(grunt) {
     nggettext_extract: {
       pot: {
         files: {
-          'po/template.pot': ['public/views/*.html', 'public/views/**/*.html']
+          'po/template.pot': ['public/*.html', 'public/views/*.html', 'public/views/**/*.html']
         }
       },
     },
