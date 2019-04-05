@@ -52,4 +52,14 @@ angular.module('insight.status').controller('StatusController',
           };
         });
     };
+
+    $scope.getPeets = function() {
+      $scope.loading = true;
+
+      Peers.get({},
+        function(res) {
+          $scope.loading = false;
+          $scope.peers = res.peerInfo;
+        });
+    };
   });

@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git://github.com/TheTrunk/insight-ui-zelcash.git"
   },
+  "scripts": {
+    "build": "bower install && grunt compile"
+  },
   "contributors": [
     {
       "name": "Matias Alejo Garcia",

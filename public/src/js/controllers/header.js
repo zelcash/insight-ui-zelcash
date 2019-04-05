@@ -8,16 +8,22 @@ angular.module('insight.system').controller('HeaderController',
       factor: 1,
       bitstamp: 0,
       testnet: testnet,
-      netSymbol: netSymbol,
-      symbol: netSymbol
+      netSymbol: 'ZEL',
+      symbol: 'ZEL'
     };
 
     $scope.menu = [{
       'title': 'Blocks',
       'link': 'blocks'
     }, {
+      'title': 'Rich List',
+      'link': 'rich-list'
+    }, {
       'title': 'Charts',
       'link': 'charts'
+    }, {
+      'title': 'Statistics',
+      'link': 'stats'
     }, {
       'title': 'Status',
       'link': 'status'

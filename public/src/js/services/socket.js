@@ -58,6 +58,8 @@ angular.module('insight.socket').factory('getSocket',
     var socket = io.connect(null, {
       'reconnect': true,
       'reconnection delay': 500,
+      'transoports': ['websocket'],
+      'upgrade': false
     });
     return function(scope) {
       var scopedSocket = new ScopedSocket(socket, $rootScope);
